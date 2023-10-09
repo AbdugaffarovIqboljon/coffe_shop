@@ -1,13 +1,15 @@
 import 'package:coffee_shop_app_with_bloc/blocs/cart/bloc/cart_bloc.dart';
-import 'package:coffee_shop_app_with_bloc/constants/constants.dart';
+import 'package:coffee_shop_app_with_bloc/service/constants/constants.dart';
 import 'package:coffee_shop_app_with_bloc/models/models.dart';
-import 'package:coffee_shop_app_with_bloc/pages/pages.dart';
+import 'package:coffee_shop_app_with_bloc/pages/library.dart';
 import 'package:coffee_shop_app_with_bloc/views/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';
+
+import '../service/constants/images.dart';
 
 class DetailPage extends StatefulWidget {
   const DetailPage({super.key, required this.coffee});

@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/constants.dart';
-import '../pages/pages.dart';
+import '../service/constants/constants.dart';
+import '../pages/library.dart';
 import 'widgets.dart';
 
 class AppBarWidget extends StatelessWidget {

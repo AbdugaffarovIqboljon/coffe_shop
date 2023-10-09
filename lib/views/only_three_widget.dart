@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants/constants.dart';
+import '../service/constants/constants.dart';
 
 class OnlyThreeWidget extends StatelessWidget {
   const OnlyThreeWidget({

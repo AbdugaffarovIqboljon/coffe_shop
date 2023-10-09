@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
-import '../constants/constants.dart';
-import '../pages/pages.dart';
+import '../service/constants/constants.dart';
+import '../pages/library.dart';
 import 'widgets.dart';
 
 class AnimetedAppBarWidget extends StatelessWidget {

@@ -1,6 +1,6 @@
-import 'package:coffee_shop_app_with_bloc/constants/constants.dart';
+import 'package:coffee_shop_app_with_bloc/service/constants/constants.dart';
 import 'package:coffee_shop_app_with_bloc/models/models.dart';
-import 'package:coffee_shop_app_with_bloc/pages/pages.dart';
+import 'package:coffee_shop_app_with_bloc/pages/library.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

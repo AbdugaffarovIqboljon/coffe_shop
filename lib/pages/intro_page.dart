@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../constants/constants.dart';
-import 'pages.dart';
+import '../service/constants/constants.dart';
+import 'library.dart';
 
 class IntroPage extends StatefulWidget {
   const IntroPage({super.key});

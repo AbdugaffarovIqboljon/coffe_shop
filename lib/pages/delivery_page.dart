@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import '../constants/constants.dart';
+import '../service/constants/constants.dart';
 
 class DeliveryPage extends StatelessWidget {
   const DeliveryPage({super.key});

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../constants/constants.dart';
+import '../service/constants/images.dart';
 
 class AnimatedCoffeeImage extends StatelessWidget {
   const AnimatedCoffeeImage({

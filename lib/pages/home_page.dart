@@ -4,9 +4,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../constants/constants.dart';
+import '../service/constants/constants.dart';
 import '../views/widgets.dart';
-import 'pages.dart';
+import 'library.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -201,31 +201,32 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                                           CenterPageEnlargeStrategy.height,
                                     ),
                                     items: state.initial
-                                        .map((coffee) => SizedBox(
-                                              width: 210,
-                                              child: GestureDetector(
-                                                onTap: () {
-                                                  Navigator.of(context).push(
-                                                    CupertinoPageRoute(
-                                                      builder: (context) =>
-                                                          DetailPage(
-                                                        coffee: coffee,
-                                                      ),
+                                        .map(
+                                          (coffee) => SizedBox(
+                                            width: 210,
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.of(context).push(
+                                                  CupertinoPageRoute(
+                                                    builder: (context) =>
+                                                        DetailPage(
+                                                      coffee: coffee,
                                                     ),
-                                                  );
-                                                },
-                                                child: OnlyThreeWidget(
-                                                  assetImage: coffee.assetImage,
-                                                  explain: coffee.description,
-                                                  title: coffee.type.name,
-                                                  name: coffee.title,
-                                                  prise:
-                                                      coffee.price.toString(),
-                                                  scale: 1.2,
-                                                  assetScale: 1.5,
-                                                ),
+                                                  ),
+                                                );
+                                              },
+                                              child: OnlyThreeWidget(
+                                                assetImage: coffee.assetImage,
+                                                explain: coffee.description,
+                                                title: coffee.type.name,
+                                                name: coffee.title,
+                                                prise: coffee.price.toString(),
+                                                scale: 1.2,
+                                                assetScale: 1.5,
                                               ),
-                                            ))
+                                            ),
+                                          ),
+                                        )
                                         .toList(),
                                   );
                                 },
